@@ -1,0 +1,2 @@
+[2025-11-14 16:58:34] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":2,"sender_type":"delivery","sender_id":3,"message":"Hi From Driver","updated_at":"2025-11-14T14:58:33.000000Z","created_at":"2025-11-14T14:58:33.000000Z","id":17}}} 
+[2025-11-14 16:58:51] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":2,"sender_type":"delivery","sender_id":3,"message":"Hi From Driver","updated_at":"2025-11-14T14:58:50.000000Z","created_at":"2025-11-14T14:58:50.000000Z","id":18}}} 
