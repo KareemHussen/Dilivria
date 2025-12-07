@@ -8,6 +8,7 @@
         "php": "^8.2",
         "bezhansalleh/filament-language-switch": "^3.1",
         "google/apiclient": "^2.18",
+        "hypersender/hypersender-laravel": "^1.0",
         "kenepa/translation-manager": "^4.0",
         "laravel/framework": "^11.9",
         "laravel/sanctum": "^4.0",

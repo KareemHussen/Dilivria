@@ -6,18 +6,19 @@ use App\Models\AppNotification;
 use Google\Client as GoogleClient;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 
 trait FcmNotificationTrait
 {
     protected static function getFcmProjectId()
     {
-        return "dillivria-c5524";
+        return "dilivria-41882";
     }
 
     protected static function getFcmCredentialsPath()
     {
-        return Storage::path('dillivria-c5524-firebase-adminsdk-3ysmo-b94b32dd67.json');
+        return Storage::path("dilivria-41882-69a17e7c32ab.json");
     }
 
     protected static function getGoogleClient()
@@ -44,7 +45,7 @@ trait FcmNotificationTrait
         $response = Http::withHeaders([
             'Authorization' => "Bearer {$accessToken}",
             'Content-Type' => 'application/json',
-        ])->post("https://fcm.googleapis.com/v1/projects/dillivria-c5524/messages:send", [
+        ])->post("https://fcm.googleapis.com/v1/projects/{$projectId}/messages:send", [
             'message' => [
                 'token' => $fcmToken,
                 'notification' => [
@@ -58,6 +59,8 @@ trait FcmNotificationTrait
             ],
         ]);
 
+        Log::info('FCM response:', ['response' => $response]);
+
         return $response->json();
     }
 
@@ -66,6 +69,8 @@ trait FcmNotificationTrait
         try {
             $response = self::sendFcmNotification($fcmToken, $title, $body, $url ?? null, $method ?? null);
             //Save Notification to database
+            Log::info('FCM response:', ['response' => $response]);
+
             if($customer_id){
             AppNotification::create([
                 'customer_id' => $customer_id,
@@ -73,12 +78,14 @@ trait FcmNotificationTrait
                 "body" => $body
             ]);
             }
+            Log::info('Notification sent successfully:', ['response' => $response]);
             return [
                 'success' => true,
                 'message' => 'Notification sent successfully',
                 'response' => $response,
             ];
         } catch (\Exception $e) {
+            Log::error('Error processing notification:', ['error' => $e->getMessage()]);
             return [
                 'success' => false,
                 'message' => 'Error processing notification: ' . $e->getMessage()

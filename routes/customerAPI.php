@@ -16,6 +16,7 @@ use App\Http\Controllers\Customer\ProfileController;
 Route::prefix('customer')->group(function () {
     //Auth
     Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/verify-register-otp', [AuthController::class, 'verifyRegisterOtp']);
 
     Route::get("/cost-per-km", [PlaceOrderController::class, 'getCostPerKM']);
 

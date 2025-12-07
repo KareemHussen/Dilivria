@@ -57,7 +57,8 @@ class PopularPlaceResource extends Resource
                                     ->directory('places')
                                     ->multiple()
                                     ->columnSpanFull()
-                                    ->panelLayout('grid'),
+                                    ->panelLayout('grid')
+                                    ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg', 'image/gif']),
                                 ]),
                                 Tabs\Tab::make(__("Location"))
                                 ->schema([
@@ -92,10 +93,19 @@ class PopularPlaceResource extends Resource
                     ->label(__('Name'))
                     ->searchable(),
                 Tables\Columns\TextColumn::make('address')
-                    ->label(__("Address"))
+                    ->label(__('Address'))
                     ->searchable(),
+                Tables\Columns\ImageColumn::make('preview_image')
+                    ->label(__('Preview'))
+                    ->getStateUsing(function ($record) {
+                        if ($record->images && is_array($record->images) && count($record->images) > 0) {
+                            return $record->images[0]; // Return first image
+                        }
+                        return null;
+                    })
+                    ->disk('public'),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->label(__("Creation Date"))
+                    ->label(__('Creation Date'))
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

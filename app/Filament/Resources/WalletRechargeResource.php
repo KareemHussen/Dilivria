@@ -86,7 +86,7 @@ class WalletRechargeResource extends Resource
             ->columns([
                 Tables\Columns\ImageColumn::make('photo')
                 ->label(__('Receipt'))
-                ->url(fn($record) => asset($record->photo)), // Make image clickable
+                ->url(fn($record) => $record->photo_url), // Make image clickable using the accessor
                 Tables\Columns\TextColumn::make('wallet.customer.username')
                     ->label(__('Username')),
                 Tables\Columns\TextColumn::make('payment_type')

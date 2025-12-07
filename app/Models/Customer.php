@@ -19,7 +19,6 @@ class Customer extends Authenticatable
         "full_name",
         "phone",
         "email",
-        "password",
         "pin",
         "delivery",
         "lng",
@@ -39,8 +38,44 @@ class Customer extends Authenticatable
     ];
 
     protected $hidden = [
-        'password',
+        'last_otp',
+        'last_otp_expire'
     ];
+
+    protected $casts = [
+        'last_otp'=> 'hashed'
+    ];
+    
+    protected $appends = [
+        'picture_url'
+    ];
+    
+    /**
+     * Get the profile picture URL
+     *
+     * @return string|null
+     */
+    public function getPictureUrlAttribute()
+    {
+        if ($this->picture) {
+            // Get the base domain from config or use localhost as fallback
+            $baseDomain = config('app.url', 'http://localhost');
+            
+            // Remove any trailing slash from base domain
+            $baseDomain = rtrim($baseDomain, '/');
+            
+            // Format with specific URL structure (remove /app/public/)
+            if (str_starts_with($this->picture, '/storage/')) {
+                // If path already starts with /storage/, use it directly
+                return $baseDomain . $this->picture;
+            } else {
+                // Otherwise prefix with /storage/
+                return $baseDomain . '/storage/' . $this->picture;
+            }
+        }
+        
+        return null;
+    }
 
     public function favorites()
     {

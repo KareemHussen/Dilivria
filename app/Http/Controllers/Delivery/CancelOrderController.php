@@ -50,7 +50,7 @@ class CancelOrderController extends Controller
         if($validator->fails()){
             return $this->handleResponse(false, "", [$validator->errors()->first()],[],[]);
         }
-        $cancelRequest = OrderCancel::where('id', $request->cancel_request_id)->where('status', 'pending')->first();
+        $cancelRequest = OrderCancel::where( 'id', $request->cancel_request_id)->where('status', 'pending')->first();
         if ($cancelRequest){
             $order = Order::where("id", $cancelRequest->order_id)->whereNotIn('status', ['completed', 'cancelled_user', 'cancelled_delivery'])->first();
             if($order){
@@ -71,10 +71,10 @@ class CancelOrderController extends Controller
                     $transaction->save();
                 }
                 $this->sendNotification(
-                    $order->customer->fcm_token,
+                    $order->placeOrder->customer->fcm_token,
                     "تم قبول طلب الإلغاء",
                     "لقد تم قبول طلب الالغاء الخاص بك",
-                    $order->customer->id
+                    $order->placeOrder->customer->id
                 );
                 return $this->handleResponse(
                     true,
@@ -129,10 +129,10 @@ class CancelOrderController extends Controller
         ]);
 
         $this->sendNotification(
-            $order->customer->fcm_token,
+            $order->placeOrder->customer->fcm_token,
             "تلقيت طلب الإلغاء",
             $request->reason,
-            $order->customer->id
+            $order->placeOrder->customer->id
         );
         return $this->handleResponse(
             true,

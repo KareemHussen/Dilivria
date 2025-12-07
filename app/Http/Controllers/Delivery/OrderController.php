@@ -108,10 +108,10 @@ class OrderController extends Controller
             $order->load("placeOrder");
 
             $notifyCustomer = $this->sendNotification(
-                $order->customer->fcm_token,
+                $placeOrder->customer->fcm_token,
                 "لقد وجدت رجل توصيل!",
                 "قبل " . $delivery->first_name . " طلبك",
-                $order->customer->id               
+                $placeOrder->customer->id               
             );
             return $this->handleResponse(
                 true,

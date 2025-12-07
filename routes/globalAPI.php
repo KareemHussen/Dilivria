@@ -17,7 +17,10 @@ Route::get('/forgot-password', [AuthController::class, "sendForgetPassword"]);
 Route::post('/forgot-password-check-code', [AuthController::class, "forgetPasswordCheckCode"]);
 Route::post('/forgot-password-set', [AuthController::class,'forgetPassword']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/verify-login-otp', [AuthController::class, 'verifyLoginOtp']);
+Route::post('/ask-otp', [AuthController::class, 'askOtp']);
 Route::post('/logout', [AuthController::class, "logout"])->middleware('auth:sanctum,customer');
+Route::post('/update-fcm', [AuthController::class, 'updateFCM'])->middleware('auth:sanctum,customer');
 
 //Wallet 
 Route::get('/wallet/get', [WalletController::class, 'get'])->middleware('auth:sanctum,customer');

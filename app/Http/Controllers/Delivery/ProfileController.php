@@ -15,7 +15,7 @@ class ProfileController extends Controller
 
     public function get(Request $request){
         $user = Customer::where('id', $request->user()->id)
-        ->select("id", "full_name", "username", "phone", "delivery_rate", "picture", "delivery", "verified")
+        ->select("id", "full_name", "username", "phone", "delivery_rate", "picture", "delivery", "verified" , 'delivery_status')
         ->first();
 
         $orders = $user->orders()->get();
@@ -78,7 +78,8 @@ class ProfileController extends Controller
             $user->phone = $request->phone;
             }
             if ($request->picture) {
-                $imagePath = $request->file('picture')->store('/storage/profile', 'public');
+                // Store in profile folder directly without the extra 'storage' directory
+                $imagePath = $request->file('picture')->store('profile', 'public');
                 $user->picture = $imagePath;
             }
             $user->save();

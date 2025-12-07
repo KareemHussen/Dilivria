@@ -40,6 +40,8 @@ class CustomerResource extends Resource
             ->schema([
                 Forms\Components\FileUpload::make('picture')
                     ->label(__('Picture'))
+                    ->disk('public')
+                    ->directory('profile')
                     ->default(null),
                 Forms\Components\TextInput::make('full_name')
                     ->label(__('Full Name'))
@@ -63,12 +65,18 @@ class CustomerResource extends Resource
                     ->default(null),
                 Forms\Components\FileUpload::make('id_front')
                     ->label(__('ID Front'))
+                    ->disk('public')
+                    ->directory('profile')
                     ->default(null),
                 Forms\Components\FileUpload::make('id_back')
                     ->label(__('ID Back'))
+                    ->disk('public')
+                    ->directory('profile')
                     ->default(null),
                 Forms\Components\FileUpload::make('selfie')
                     ->label(__('Selfie'))
+                    ->disk('public')
+                    ->directory('profile')
                     ->default(null),
                 Forms\Components\Select::make('delivery_status')
                     ->label(__('Delivery Status'))

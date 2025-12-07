@@ -292,7 +292,8 @@ class WalletController extends Controller
         $user = $request->user();
         $wallet = $user->wallet()->first();
 
-        $imagePath = $request->file('photo')->store('/storage/recharges', 'public');
+        // Store in recharges folder directly without the extra 'storage' directory
+        $imagePath = $request->file('photo')->store('recharges', 'public');
         $recharge = WalletRecharge::create([
             "wallet_id" => $wallet->id,
             "photo" => $imagePath,

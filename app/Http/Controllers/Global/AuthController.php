@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Customer;
 use App\Traits\HandleResponseTrait;
 use App\Traits\SendMailTrait;
+use App\Traits\SendSMSTrait;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,7 +15,7 @@ use Carbon\Carbon;
 
 class AuthController extends Controller
 {
-    use HandleResponseTrait, SendMailTrait;
+    use HandleResponseTrait, SendMailTrait, SendSMSTrait;
     
     public function askEmailCode(Request $request) {
         $user = $request->user();
@@ -94,7 +95,6 @@ class AuthController extends Controller
                 } else {
                     $user->verified = true;
                     $user->save();
-
 
 
 
@@ -363,33 +363,168 @@ class AuthController extends Controller
     }
 
     public function login(Request $request) {
-        $credentials = $request->only('phone', 'password');
-        if (Auth::guard('customer')->attempt(['phone' => $request->phone, 'password' => $request->password])) {
-            $user = Auth::guard('customer')->user();
-            $token = $user->createToken('token')->plainTextToken;
-            $userType = $user->delivery ? "delivery" : "customer";
+        $validator = Validator::make($request->all(), [
+            'phone' => ['required', 'regex:/^01[0-2,5]\d{8}$/'],
+            'channel' => ['required' , 'string' , 'in:whatsapp,sms'],
+        ], [
+            "required" => __('validation.required')
+        ]);
 
-            if($request->fcm_token){
-                $user->fcm_token = $request->fcm_token;
-                $user->save();
-            }
-
-
-        }else  {
-                return $this->handleResponse(
+        if ($validator->fails()) {
+            return $this->handleResponse(
                 false,
                 "",
-                [__('registration.Invalid Credentials')],
+                [$validator->errors()->first()],
+                [],
+                []
+            );
+        }
+
+        $user = Customer::where("phone", $request->phone)->first();
+
+        if (!$user) {
+            return $this->handleResponse(
+                false,
+                "",
+                [__('registration.you are not registered')],
+                [],
+                []
+            );
+        }
+
+        // Generate OTP code
+        $code = rand(1000, 9999);
+
+        $user->last_otp = $code;
+        $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+        
+        $user->save();
+        
+        // Optionally send via WhatsApp too if preferred channel is WhatsApp
+        $preferWhatsApp = $request->channel === 'whatsapp';
+        if ($preferWhatsApp) {
+            $whatsappResult = $this->sendWhatsAppOTP($user->phone, $code);
+        }else {
+            $smsResult = $this->sendSMS($user->phone, $code);
+        }
+
+        return $this->handleResponse(
+            true,
+            __('registration.auth code sent to your phone') . $code,
+            [],
+            [],
+            [
+                "code get expired after 10 minutes",
+                "Please verify your OTP to complete login"
+            ]
+        );
+    }
+
+    public function updateFCM(Request $request) {
+        $validator = Validator::make($request->all(), [
+            "fcm_token" => ["required"],
+        ], [
+            "fcm_token.required" => __('validation.required'),
+    
+        ]);
+
+        if ($validator->fails()) {
+            return $this->handleResponse(
+                false,
+                "",
+                [$validator->errors()->first()],
+                [],
+                []
+            );
+        }
+
+        $user = $request->user();
+
+        if ($user) {
+            $user->fcm_token = $request->fcm_token;
+            $user->save();
+
+            return $this->handleResponse(
+                true,
+                __("registration.fcm updated successfully"),
+                [],
+                [],
+                []
+            );
+        } else {
+            return $this->handleResponse(
+                false,
+                "",
+                [__("registration.you are not registered")],
                 [],
                 []
             );
         }
 
 
-        // return response()->json(compact('token'));
+    }
+
+    public function verifyLoginOtp(Request $request) {
+        $validator = Validator::make($request->all(), [
+            "phone" => ["required"],
+            "code" => ["required"],
+        ], [
+            "required" => __('validation.required')
+        ]);
+
+        if ($validator->fails()) {
+            return $this->handleResponse(
+                false,
+                "",
+                [$validator->errors()->first()],
+                [],
+                []
+            );
+        }
+
+        $user = Customer::where("phone", $request->phone)->first();
+        $code = $request->code;
+
+        if (!$user) {
+            return $this->handleResponse(
+                false,
+                "",
+                [__('registration.you are not registered')],
+                [],
+                []
+            );
+        }
+
+        if (!Hash::check($code, $user->last_otp ? $user->last_otp : Hash::make('0000'))) {
+            return $this->handleResponse(
+                false,
+                "",
+                [__('registration.incorrect code')],
+                [],
+                []
+            );
+        } 
+        
+        $timezone = 'Africa/Cairo';
+        $verificationTime = new Carbon($user->last_otp_expire, $timezone);
+        
+        if ($verificationTime->isPast()) {
+            return $this->handleResponse(
+                false,
+                "",
+                [__('registration.this code is expired')],
+                [],
+                []
+            );
+        }
+
+        // OTP is valid, log the user in
+        $token = $user->createToken('token')->plainTextToken;
+        $userType = $user->delivery ? "delivery" : "customer";
+
         return $this->handleResponse(
             true,
-            __("registration.You are Loged In"),
+            __("registration.You are Logged In"),
             [],
             [
                "token" => $token,
@@ -399,6 +534,66 @@ class AuthController extends Controller
         );
     }
 
+    public function askOtp(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'phone' => ['required', 'regex:/^01[0-2,5]\d{8}$/'],
+            'channel' => ['required', 'string', 'in:whatsapp,sms'],
+        ], [
+            "required" => __('validation.required')
+        ]);
+
+        if ($validator->fails()) {
+            return $this->handleResponse(
+                false,
+                "",
+                [$validator->errors()->first()],
+                [],
+                []
+            );
+        }
+
+        $user = Customer::where("phone", $request->phone)->first();
+        
+        if (!$user) {
+            return $this->handleResponse(
+                false,
+                "",
+                [__('registration.you are not registered')],
+                [],
+                []
+            );
+        }
+
+        // Generate OTP code
+        $code = rand(1000, 9999);
+
+        $user->last_otp = Hash::make($code);
+        $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+        
+        if($request->fcm_token) {
+            $user->fcm_token = $request->fcm_token;
+        }
+        
+        $user->save();
+        
+        // Optionally send via WhatsApp too if preferred channel is WhatsApp
+        $preferWhatsApp = $request->channel === 'whatsapp';
+        if ($preferWhatsApp) {
+            $whatsappResult = $this->sendWhatsAppOTP($user->phone, $code);
+        } else {
+            $smsResult = $this->sendSMS($user->phone, $code);
+        }
+
+        return $this->handleResponse(
+            true,
+            __('registration.auth code sent to your phone'),
+            [],
+            [],
+            [
+                "code get expired after 10 minutes"
+            ]
+        );
+    }
 
     public function logout(Request $request) {
         $user = $request->user();
@@ -422,5 +617,4 @@ class AuthController extends Controller
             ]
         );
     }
-
 }

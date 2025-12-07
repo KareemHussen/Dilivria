@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Customer;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Customer;
+use App\Models\RegistrationOtp;
 use App\Traits\HandleResponseTrait;
 use App\Traits\SendMailTrait;
+use App\Traits\SendSMSTrait;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,7 +16,7 @@ use Carbon\Carbon;
 
 class AuthController extends Controller
 {
-    use HandleResponseTrait, SendMailTrait;
+    use HandleResponseTrait, SendMailTrait, SendSMSTrait;
 
 
     public function register(Request $request) {
@@ -24,15 +26,10 @@ class AuthController extends Controller
             'last_name' => ['required','string','max:255'],
             "username"=> ['required', 'unique:customers,username'],
             'email' => ['nullable','email'],
-            'phone' => ['required',
-            'string','unique:customers,phone'],
-            'password' => ['required',
-            'string','min:8',
-            'regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W])[A-Za-z\d\W]+$/u',
-            'confirmed'],
-            'fcm_token'=> ['required','string']
+            'phone' => ['required','string','unique:customers,phone' , 'regex:/^01[0-2,5]\d{8}$/'],
+            'fcm_token'=> ['required','string'],
+            'channel'=> ['required','string' , 'in:whatsapp,sms']
         ], [
-            "password.regex" => __('validation.regex'),
             "required"=> __('validation.required'),
             "string"=> __('validation.string'),
             "max"=> __('validation.max.string'),
@@ -62,37 +59,41 @@ class AuthController extends Controller
             'username'=> $request->username,
             'email' => $request->email,
             'phone'=> $request->phone,
-            'password' => Hash::make($request->password),
             'fcm_token'=> $request->fcm_token
         ]);
 
         if ($user) {
             $code = rand(1000, 9999);
 
-            $user->last_otp = Hash::make($code);
+            $user->last_otp = $code;
             $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
             $user->save();
-            $message = __("registration.Your Authentication Code is") . $code;
+            $message = __("registration.Your Authentication Code is");
+
+            // Optionally send via WhatsApp too if preferred channel is WhatsApp
+            $preferWhatsApp = $request->channel === 'whatsapp';
+            if ($preferWhatsApp) {
+                $whatsappResult = $this->sendWhatsAppOTP($user->phone, $code);
+            }else {
+                $smsResult = $this->sendSMS($user->phone, $code);
+            }
 
             // $this->sendEmail($user->email,"OTP", $message);
         }
 
 
-        $token = $user->createToken('token')->plainTextToken;
-
-
+        // $token = $user->createToken('token')->plainTextToken;
 
 
         return $this->handleResponse(
             true,
             __('registration.signed up successfully'),
             [],
+            [],
             [
-                "user" => $user,
-                "token" => $token,
-                "fcm_token"=> $user->fcm_token
-            ],
-            []
+                "code get expired after 10 minutes",
+                "Please verify your OTP to complete login"
+            ]
         );
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,3 +19,6 @@ Route::get('/unauthorized', function () {
         ]
         , 401);
     });
+
+
+Broadcast::routes(['middleware' => 'auth:sanctum']);
