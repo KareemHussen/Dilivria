@@ -55,14 +55,15 @@ class MessageController extends Controller
                 "sender_id" => $delivery->id,
                 "message" => $request->message
             ]);
-            if(!is_null($order->customer?->fcm_token)){
-                $this->sendNotification(
-                    $order->customer->fcm_token,
-                    "تلقيت رسالة من " . $delivery->first_name,
-                    $request->reason,
-                    $order->customer->id
-                );
-            }
+
+            \Log::info('Message broadcast attempted to customer', ['cusomer' => $order->placeOrder->customer]);
+        
+            $this->sendNotification(
+                $order->placeOrder->customer->fcm_token,
+                "تلقيت رسالة من " . $delivery->first_name,
+                $request->message,
+                $order->placeOrder->customer->id
+            );
 
             broadcast(new SendMessageEvent($message))->toOthers();
             \Log::info('Message broadcast attempted', ['message_id' => $message]);

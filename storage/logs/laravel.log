@@ -1,16 +1,57 @@
-[2025-11-30 20:12:07] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-11-30 20:13:43] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-11-30 20:19:31] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-11-30 20:22:47] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad600-c8d4-71ae-b003-9c14109c0adc","request_id":"665d267d-4c3f-4573-ae02-baf264f26328","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:22:33","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-29 20:23:38","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:22:33","heartbeat_enabled_at":"2025-11-30 18:22:33","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:22:33"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 6379","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:22:46","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:22:46","updated_at":"2025-11-30 18:22:46"}}} 
-[2025-11-30 20:22:59] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad600-f98e-72af-8496-5d2d45d01fd0","request_id":"e995d229-cec6-496a-b2d1-fa28397a699b","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:22:33","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:22:49","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:22:33","heartbeat_enabled_at":"2025-11-30 18:22:33","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:22:49"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 4151","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:22:59","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:22:59","updated_at":"2025-11-30 18:22:59"}}} 
-[2025-11-30 20:23:34] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad601-8040-73a0-b24e-c03aafa87bb8","request_id":"72f81ddb-f9f9-4c49-bbb9-ee8b693a12e8","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:23:01","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:23:08","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:23:08"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 7777","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:23:33","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:23:33","updated_at":"2025-11-30 18:23:33"}}} 
-[2025-11-30 20:35:04] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764527704624162%cfff6910cfff6910\"
-}
-"}} 
-[2025-11-30 20:35:04] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764527704624162%cfff6910cfff6910"}} 
-[2025-11-30 20:35:04] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764527704624162%cfff6910cfff6910"}} 
-[2025-11-30 20:35:15] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
+[2025-12-08 12:25:02] production.ERROR: Too few arguments to function Illuminate\Foundation\Configuration\ApplicationBuilder::{closure}(), 1 passed in C:\Users\kimog\Downloads\Compressed\Disito\dsito\vendor\laravel\framework\src\Illuminate\Broadcasting\Broadcasters\Broadcaster.php on line 119 and exactly 2 expected {"userId":2,"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function Illuminate\\Foundation\\Configuration\\ApplicationBuilder::{closure}(), 1 passed in C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\Broadcasters\\Broadcaster.php on line 119 and exactly 2 expected at C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\routes\\channels.php:17)
+[stacktrace]
+#0 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\Broadcasters\\Broadcaster.php(119): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->{closure}(Object(App\\Models\\Customer))
+#1 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster.php(85): Illuminate\\Broadcasting\\Broadcasters\\Broadcaster->verifyUserCanAccessChannel(Object(Illuminate\\Http\\Request), 'order.1')
+#2 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastManager.php(523): Illuminate\\Broadcasting\\Broadcasters\\PusherBroadcaster->auth(Object(Illuminate\\Http\\Request))
+#3 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(358): Illuminate\\Broadcasting\\BroadcastManager->__call('auth', Array)
+#4 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Broadcasting\\BroadcastController.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('auth', Array)
+#5 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): Illuminate\\Broadcasting\\BroadcastController->authenticate(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('authenticate', Array)
+#7 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Broadcasting\\BroadcastController), 'authenticate')
+#8 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(211): Illuminate\\Routing\\Route->runController()
+#9 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#10 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#13 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\app\\Http\\Middleware\\LogBroadcastAuth.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\LogBroadcastAuth->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#15 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\livewire\\livewire\\src\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\app\\Http\\Middleware\\SetLocale.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\SetLocale->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\kimog\\Downloads\\Compressed\\Disito\\dsito\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\Users\\\\kimog\\\\...')
+#48 {main}
+"} 
+[2025-12-08 13:04:58] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
+[2025-12-08 13:08:02] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
   \"error\": {
     \"code\": 400,
     \"message\": \"The registration token is not a valid FCM registration token\",
@@ -24,435 +65,6 @@
   }
 }
 "}} 
-[2025-11-30 20:35:15] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:35:16] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:37:19] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"تبنت","updated_at":"2025-11-30T18:37:19.000000Z","created_at":"2025-11-30T18:37:19.000000Z","id":1}}} 
-[2025-11-30 20:37:31] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-11-30 20:37:31] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:37:31] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:37:39] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"ززرزبز","updated_at":"2025-11-30T18:37:39.000000Z","created_at":"2025-11-30T18:37:39.000000Z","id":3}}} 
-[2025-11-30 20:37:41] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"زرزرززب","updated_at":"2025-11-30T18:37:41.000000Z","created_at":"2025-11-30T18:37:41.000000Z","id":4}}} 
-[2025-11-30 20:37:46] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"ردرددىدىكددد","updated_at":"2025-11-30T18:37:45.000000Z","created_at":"2025-11-30T18:37:45.000000Z","id":5}}} 
-[2025-11-30 20:37:51] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"جححححححححح","updated_at":"2025-11-30T18:37:51.000000Z","created_at":"2025-11-30T18:37:51.000000Z","id":6}}} 
-[2025-11-30 20:37:58] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-11-30 20:37:58] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:37:58] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-11-30 20:38:22] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"ايه نبنبننرتبن","updated_at":"2025-11-30T18:38:22.000000Z","created_at":"2025-11-30T18:38:22.000000Z","id":8}}} 
-[2025-11-30 20:40:11] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"ةاغغ","updated_at":"2025-11-30T18:40:11.000000Z","created_at":"2025-11-30T18:40:11.000000Z","id":9}}} 
-[2025-11-30 20:42:54] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":3,"message":"ةااااا","updated_at":"2025-11-30T18:42:53.000000Z","created_at":"2025-11-30T18:42:53.000000Z","id":10}}} 
-[2025-11-30 20:48:17] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad618-22f5-7232-87da-70a9001aceb5","request_id":"8dd37afa-f429-4ecd-96fd-9afaf3ff4f7f","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:23:34","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:48:05","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:48:05"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 6713","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:48:17","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:48:17","updated_at":"2025-11-30 18:48:17"}}} 
-[2025-11-30 20:49:45] production.ERROR: Attempt to read property "fcm_token" on null {"userId":3,"exception":"[object] (ErrorException(code: 0): Attempt to read property \"fcm_token\" on null at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:132)
-[stacktrace]
-#0 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(281): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
-#1 /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php(132): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
-#2 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Delivery\\CancelOrderController->sendRequest()
-#3 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch()
-#4 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate\\Routing\\Route->runController()
-#5 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
-#6 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
-#7 /var/www/dilivria/dsito-main/app/Http/Middleware/CheckDeliveryAccess.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#8 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\CheckDeliveryAccess->handle()
-#9 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#10 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
-#11 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#12 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle()
-#13 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#14 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
-#15 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
-#16 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
-#17 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
-#18 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch()
-#19 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
-#20 /var/www/dilivria/dsito-main/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#21 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle()
-#22 /var/www/dilivria/dsito-main/app/Http/Middleware/SetLocale.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#23 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\SetLocale->handle()
-#24 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#25 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#26 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
-#27 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#28 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#29 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
-#30 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#31 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
-#32 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#33 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
-#34 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#35 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
-#36 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#37 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
-#38 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#39 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle()
-#40 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#41 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then()
-#42 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
-#43 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle()
-#44 /var/www/dilivria/dsito-main/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
-#45 {main}
-"} 
-[2025-11-30 20:51:06] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad61a-b817-701d-b63e-014442085b84","request_id":"4f6f8109-072d-4cbe-89f9-279788a9486f","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:48:18","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:48:20","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:48:20"},"message_thread_id":"019ac222-c98a-7251-8412-466f34344485","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201000000008","content":"Your OTP code is 3235","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:51:06","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:51:06","updated_at":"2025-11-30 18:51:06"}}} 
-[2025-11-30 20:51:11] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad61a-c916-7386-87cb-88cc4f0fb5b0","request_id":"f9a5448c-2e78-42bc-962f-88e4fd7e8792","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:51:08","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:48:20","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:51:08"},"message_thread_id":"019ac222-c98a-7251-8412-466f34344485","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201000000008","content":"Your OTP code is 8240","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:51:10","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:51:10","updated_at":"2025-11-30 18:51:10"}}} 
-[2025-11-30 20:54:27] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad61d-c80c-72f1-b1da-98db18163382","request_id":"e61e6954-9080-4991-90b9-14f08e97b827","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:51:11","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:48:20","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:51:11"},"message_thread_id":"019ac015-d83f-73e4-8f0b-83eec11d0bbe","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558178420","content":"Your OTP code is 7142","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:54:27","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:54:27","updated_at":"2025-11-30 18:54:27"}}} 
-[2025-11-30 20:54:38] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad61d-f367-737a-8cbd-ba94e87c4b7c","request_id":"08587e83-4dfd-4ff2-9c07-a3eb83b644ac","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:54:28","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 18:48:20","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 18:54:28"},"message_thread_id":"019ac015-d83f-73e4-8f0b-83eec11d0bbe","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558178420","content":"Your OTP code is 9717","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 18:54:38","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 18:54:38","updated_at":"2025-11-30 18:54:38"}}} 
-[2025-12-01 00:00:17] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad6c7-eb4c-73d3-a280-0e8e8c9a595c","request_id":"43f80287-d661-421f-81de-c3b81b07b375","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 18:54:40","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 22:00:14","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 22:00:14"},"message_thread_id":"019abbbb-979e-70ec-9968-e853fcba0f18","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201203354574","content":"Your OTP code is 6136","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 22:00:17","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 22:00:17","updated_at":"2025-11-30 22:00:17"}}} 
-[2025-12-01 00:00:35] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad6c8-30d8-738a-9a0f-192cab8b7f00","request_id":"8932266e-3dab-44e1-93ad-74b7d1ed581b","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 22:00:21","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 22:00:14","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 22:00:21"},"message_thread_id":"019abbbb-979e-70ec-9968-e853fcba0f18","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201203354574","content":"Your OTP code is 1207","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 22:00:35","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 22:00:35","updated_at":"2025-11-30 22:00:35"}}} 
-[2025-12-01 00:01:03] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad6c8-9ea7-73f5-9f12-80b794306cb1","request_id":"8fb9d99a-f763-4c48-a07e-e714ef6f90cf","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-11-30 18:23:06","last_offline_at":"2025-11-30 15:00:05","last_message_at":"2025-11-30 22:00:38","last_missed_call_at":null,"last_heartbeat_at":"2025-11-30 22:00:14","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-11-30 22:00:38"},"message_thread_id":"019abbbb-979e-70ec-9968-e853fcba0f18","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201203354574","content":"Your OTP code is 9838","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-11-30 22:01:03","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-11-30 22:01:03","updated_at":"2025-11-30 22:01:03"}}} 
-[2025-12-01 00:12:11] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-12-01 00:12:11] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 00:12:11] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 00:17:38] production.ERROR: Cannot use positional argument after named argument {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use positional argument after named argument at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:53)
-[stacktrace]
-#0 {main}
-"} 
-[2025-12-01 00:19:01] production.ERROR: Cannot use positional argument after named argument {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use positional argument after named argument at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:53)
-[stacktrace]
-#0 {main}
-"} 
-[2025-12-01 00:22:10] production.ERROR: Cannot use positional argument after named argument {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use positional argument after named argument at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:53)
-[stacktrace]
-#0 {main}
-"} 
-[2025-12-01 14:23:54] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019ad9de-95a1-719b-81c4-77fc8d51ac7d","request_id":"8135ffa2-fdeb-4f07-a8e4-a18215b6820b","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-12-01 07:51:52","last_offline_at":"2025-12-01 07:00:06","last_message_at":"2025-11-30 22:01:05","last_missed_call_at":null,"last_heartbeat_at":"2025-12-01 12:16:07","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-12-01 12:16:07"},"message_thread_id":"019ac222-c98a-7251-8412-466f34344485","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201000000008","content":"Your OTP code is 1101","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-12-01 12:23:54","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-12-01 12:23:54","updated_at":"2025-12-01 12:23:54"}}} 
-[2025-12-01 14:24:59] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-12-01 14:24:59] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 14:24:59] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 14:25:20] production.ERROR: Cannot use positional argument after named argument {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use positional argument after named argument at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:53)
-[stacktrace]
-#0 {main}
-"} 
-[2025-12-01 14:26:57] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-12-01 14:26:57] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 14:26:57] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 14:27:38] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"error\": {
-    \"code\": 400,
-    \"message\": \"The registration token is not a valid FCM registration token\",
-    \"status\": \"INVALID_ARGUMENT\",
-    \"details\": [
-      {
-        \"@type\": \"type.googleapis.com/google.firebase.fcm.v1.FcmError\",
-        \"errorCode\": \"INVALID_ARGUMENT\"
-      }
-    ]
-  }
-}
-"}} 
-[2025-12-01 14:27:38] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 14:27:38] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
-[2025-12-01 18:41:28] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019adaca-6490-715a-8bd7-36deb7f38544","request_id":"fa8beb09-2bdc-4961-b39d-86482611bb37","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-12-01 07:51:52","last_offline_at":"2025-12-01 07:00:06","last_message_at":"2025-12-01 12:23:57","last_missed_call_at":null,"last_heartbeat_at":"2025-12-01 16:16:09","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-12-01 16:16:09"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 8646","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-12-01 16:41:28","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-12-01 16:41:28","updated_at":"2025-12-01 16:41:28"}}} 
-[2025-12-01 18:42:08] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019adacb-0047-727a-8c93-d94d3da7f75e","request_id":"c685e08a-283d-4679-ab50-012f6299e3b7","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-12-01 07:51:52","last_offline_at":"2025-12-01 07:00:06","last_message_at":"2025-12-01 16:41:30","last_missed_call_at":null,"last_heartbeat_at":"2025-12-01 16:16:09","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-12-01 16:41:30"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 5402","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-12-01 16:42:08","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-12-01 16:42:08","updated_at":"2025-12-01 16:42:08"}}} 
-[2025-12-01 18:42:29] production.INFO: SMS sent successfully {"response":{"message":"Message sent successfully","data":{"id":"019adacb-5165-721e-93e4-efaf1e833487","request_id":"2fee02d9-1688-4556-97d6-4b6e4d913514","phone":{"id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","user_id":"a06b03bd-57be-4878-9ccd-5cf5c9ddb292","phone_number":"+201017046725","name":"Instance #2181","sim":"SIM1","max_send_attempts":10,"message_expiration_seconds":259200,"missed_call_auto_reply_message":null,"is_online":true,"last_online_at":"2025-12-01 07:51:52","last_offline_at":"2025-12-01 07:00:06","last_message_at":"2025-12-01 16:42:10","last_missed_call_at":null,"last_heartbeat_at":"2025-12-01 16:16:09","heartbeat_enabled_at":"2025-11-30 18:23:06","timezone":"UTC","created_at":"2025-11-22 21:35:07","updated_at":"2025-12-01 16:42:10"},"message_thread_id":"019ad600-c8cb-709b-bea8-6eedb7018379","phone_id":"a06bc538-3ca6-4166-b4b7-bc1a7d7be908","from_phone_number":"+201017046725","to_phone_number":"201558175334","content":"Your OTP code is 1391","send_duration":null,"schedule_on_phone_at":null,"sent_at":null,"last_attempted_at":"2025-12-01 16:42:29","delivered_at":null,"received_at":null,"expired_at":null,"schedule_send_at":null,"failed_at":null,"send_attempt_count":null,"max_send_attempts":10,"failure_reason":null,"message_expiration_seconds":259200,"timezone":"UTC","sim":"SIM1","status":"pending","type":"sent_to_mobile","created_at":"2025-12-01 16:42:29","updated_at":"2025-12-01 16:42:29"}}} 
-[2025-12-01 18:43:23] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764607403545046%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 18:43:23] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764607403545046%cfff6910cfff6910"}} 
-[2025-12-01 18:43:23] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764607403545046%cfff6910cfff6910"}} 
-[2025-12-01 18:43:23] production.ERROR: Attempt to read property "id" on null {"userId":3,"exception":"[object] (ErrorException(code: 0): Attempt to read property \"id\" on null at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:23)
-[stacktrace]
-#0 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(281): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
-#1 /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
-#2 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Delivery\\CancelOrderController->getRequests()
-#3 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch()
-#4 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate\\Routing\\Route->runController()
-#5 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
-#6 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
-#7 /var/www/dilivria/dsito-main/app/Http/Middleware/CheckDeliveryAccess.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#8 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\CheckDeliveryAccess->handle()
-#9 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#10 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
-#11 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#12 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle()
-#13 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#14 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
-#15 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
-#16 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
-#17 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
-#18 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch()
-#19 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
-#20 /var/www/dilivria/dsito-main/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#21 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle()
-#22 /var/www/dilivria/dsito-main/app/Http/Middleware/SetLocale.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#23 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\SetLocale->handle()
-#24 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#25 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#26 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
-#27 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#28 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#29 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
-#30 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#31 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
-#32 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#33 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
-#34 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#35 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
-#36 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#37 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
-#38 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#39 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle()
-#40 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#41 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then()
-#42 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
-#43 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle()
-#44 /var/www/dilivria/dsito-main/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
-#45 {main}
-"} 
-[2025-12-01 18:44:13] production.ERROR: Attempt to read property "id" on null {"userId":3,"exception":"[object] (ErrorException(code: 0): Attempt to read property \"id\" on null at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:23)
-[stacktrace]
-#0 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(281): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
-#1 /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
-#2 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Delivery\\CancelOrderController->getRequests()
-#3 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch()
-#4 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate\\Routing\\Route->runController()
-#5 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
-#6 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
-#7 /var/www/dilivria/dsito-main/app/Http/Middleware/CheckDeliveryAccess.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#8 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\CheckDeliveryAccess->handle()
-#9 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#10 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
-#11 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#12 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle()
-#13 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#14 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
-#15 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
-#16 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
-#17 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
-#18 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch()
-#19 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
-#20 /var/www/dilivria/dsito-main/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#21 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle()
-#22 /var/www/dilivria/dsito-main/app/Http/Middleware/SetLocale.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#23 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\SetLocale->handle()
-#24 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#25 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#26 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
-#27 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#28 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#29 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
-#30 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#31 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
-#32 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#33 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
-#34 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#35 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
-#36 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#37 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
-#38 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#39 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle()
-#40 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#41 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then()
-#42 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
-#43 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle()
-#44 /var/www/dilivria/dsito-main/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
-#45 {main}
-"} 
-[2025-12-01 18:56:52] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608212434925%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 18:56:52] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608212434925%cfff6910cfff6910"}} 
-[2025-12-01 18:56:52] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608212434925%cfff6910cfff6910"}} 
-[2025-12-01 18:57:33] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608253101456%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 18:57:33] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608253101456%cfff6910cfff6910"}} 
-[2025-12-01 18:57:33] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608253101456%cfff6910cfff6910"}} 
-[2025-12-01 18:58:02] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":3,"sender_type":"delivery","sender_id":3,"message":"hiii","updated_at":"2025-12-01T16:58:02.000000Z","created_at":"2025-12-01T16:58:02.000000Z","id":12}}} 
-[2025-12-01 18:58:32] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608312805485%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 18:58:32] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608312805485%cfff6910cfff6910"}} 
-[2025-12-01 18:58:32] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608312805485%cfff6910cfff6910"}} 
-[2025-12-01 19:01:52] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608512467183%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:01:52] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608512467183%cfff6910cfff6910"}} 
-[2025-12-01 19:01:52] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608512467183%cfff6910cfff6910"}} 
-[2025-12-01 19:06:27] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608787222259%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:06:27] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608787222259%cfff6910cfff6910"}} 
-[2025-12-01 19:06:27] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608787222259%cfff6910cfff6910"}} 
-[2025-12-01 19:08:42] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608922024451%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:08:42] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608922024451%cfff6910cfff6910"}} 
-[2025-12-01 19:08:42] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608922024451%cfff6910cfff6910"}} 
-[2025-12-01 19:08:55] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764608935257475%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:08:55] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764608935257475%cfff6910cfff6910"}} 
-[2025-12-01 19:08:55] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764608935257475%cfff6910cfff6910"}} 
-[2025-12-01 19:14:59] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":3,"sender_type":"delivery","sender_id":3,"message":"iid","updated_at":"2025-12-01T17:14:59.000000Z","created_at":"2025-12-01T17:14:59.000000Z","id":18}}} 
-[2025-12-01 19:15:23] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764609323658755%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:15:23] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764609323658755%cfff6910cfff6910"}} 
-[2025-12-01 19:15:23] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764609323658755%cfff6910cfff6910"}} 
-[2025-12-01 19:27:13] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":3,"sender_type":"delivery","sender_id":3,"message":"iid","updated_at":"2025-12-01T17:27:13.000000Z","created_at":"2025-12-01T17:27:13.000000Z","id":20}}} 
-[2025-12-01 19:27:30] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764610050513189%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 19:27:30] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764610050513189%cfff6910cfff6910"}} 
-[2025-12-01 19:27:30] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764610050513189%cfff6910cfff6910"}} 
-[2025-12-01 23:29:36] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764624576610680%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 23:29:36] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764624576610680%cfff6910cfff6910"}} 
-[2025-12-01 23:29:36] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764624576610680%cfff6910cfff6910"}} 
-[2025-12-01 23:33:13] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764624793819173%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-01 23:33:13] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764624793819173%cfff6910cfff6910"}} 
-[2025-12-01 23:33:13] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764624793819173%cfff6910cfff6910"}} 
-[2025-12-02 15:25:09] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764681908984153%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-02 15:25:09] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764681908984153%cfff6910cfff6910"}} 
-[2025-12-02 15:25:09] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764681908984153%cfff6910cfff6910"}} 
-[2025-12-02 18:01:21] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-12-02 18:02:21] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-12-02 18:02:31] production.ERROR: Failed to send SMS {"status":403,"body":"{\"message\":\"Instance (Instance #2181) is not active, please reactivated it from your dashboard.\"}"} 
-[2025-12-02 18:05:24] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764691524504987%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-02 18:05:24] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764691524504987%cfff6910cfff6910"}} 
-[2025-12-02 18:05:24] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764691524504987%cfff6910cfff6910"}} 
-[2025-12-02 18:08:59] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764691739765614%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-02 18:08:59] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764691739765614%cfff6910cfff6910"}} 
-[2025-12-02 18:08:59] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764691739765614%cfff6910cfff6910"}} 
-[2025-12-02 18:09:00] production.ERROR: Attempt to read property "id" on null {"userId":3,"exception":"[object] (ErrorException(code: 0): Attempt to read property \"id\" on null at /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php:23)
-[stacktrace]
-#0 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(281): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
-#1 /var/www/dilivria/dsito-main/app/Http/Controllers/Delivery/CancelOrderController.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
-#2 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(46): App\\Http\\Controllers\\Delivery\\CancelOrderController->getRequests()
-#3 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch()
-#4 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate\\Routing\\Route->runController()
-#5 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(808): Illuminate\\Routing\\Route->run()
-#6 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
-#7 /var/www/dilivria/dsito-main/app/Http/Middleware/CheckDeliveryAccess.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#8 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\CheckDeliveryAccess->handle()
-#9 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#10 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
-#11 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php(64): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#12 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Auth\\Middleware\\Authenticate->handle()
-#13 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#14 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(807): Illuminate\\Pipeline\\Pipeline->then()
-#15 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack()
-#16 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(750): Illuminate\\Routing\\Router->runRoute()
-#17 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Routing/Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute()
-#18 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(201): Illuminate\\Routing\\Router->dispatch()
-#19 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
-#20 /var/www/dilivria/dsito-main/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#21 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\\Features\\SupportDisablingBackButtonCache\\DisableBackButtonCacheMiddleware->handle()
-#22 /var/www/dilivria/dsito-main/app/Http/Middleware/SetLocale.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#23 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\\Http\\Middleware\\SetLocale->handle()
-#24 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#25 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#26 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
-#27 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#28 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
-#29 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
-#30 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#31 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\ValidatePostSize->handle()
-#32 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#33 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
-#34 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#35 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle()
-#36 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#37 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle()
-#38 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#39 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle()
-#40 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
-#41 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then()
-#42 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
-#43 /var/www/dilivria/dsito-main/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1190): Illuminate\\Foundation\\Http\\Kernel->handle()
-#44 /var/www/dilivria/dsito-main/public/index.php(17): Illuminate\\Foundation\\Application->handleRequest()
-#45 {main}
-"} 
-[2025-12-02 18:09:36] production.INFO: FCM response: {"response":{"Illuminate\\Http\\Client\\Response":"{
-  \"name\": \"projects/dilivria-41882/messages/0:1764691776836051%cfff6910cfff6910\"
-}
-"}} 
-[2025-12-02 18:09:36] production.INFO: FCM response: {"response":{"name":"projects/dilivria-41882/messages/0:1764691776836051%cfff6910cfff6910"}} 
-[2025-12-02 18:09:36] production.INFO: Notification sent successfully: {"response":{"name":"projects/dilivria-41882/messages/0:1764691776836051%cfff6910cfff6910"}} 
+[2025-12-08 13:08:02] production.INFO: FCM response: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
+[2025-12-08 13:08:02] production.INFO: Notification sent successfully: {"response":{"error":{"code":400,"message":"The registration token is not a valid FCM registration token","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.firebase.fcm.v1.FcmError","errorCode":"INVALID_ARGUMENT"}]}}} 
+[2025-12-08 13:08:21] production.INFO: Message broadcast attempted {"message_id":{"App\\Models\\Message":{"order_id":1,"sender_type":"delivery","sender_id":1,"message":"Hi From Driver","updated_at":"2025-12-08T11:08:20.000000Z","created_at":"2025-12-08T11:08:20.000000Z","id":1}}} 

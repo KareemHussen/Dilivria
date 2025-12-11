@@ -23,6 +23,7 @@ class OrderController extends Controller
         })->with(['order', 'order.delivery' => function ($q){
             $q->select( "id","full_name", "phone", "delivery_rate","lng", "lat",);
         }])->latest()->first();
+
         if($lastOrder){
             return $this->handleResponse(
                 true,
@@ -45,20 +46,21 @@ class OrderController extends Controller
 
     public function getLast(Request $request){
         $user = $request->user();
-        $lastOrder = PlaceOrder::where('customer_id', $user->id)
+        $lastOrders = PlaceOrder::where('customer_id', $user->id)
         ->whereHas('order', function ($query){
             $query->where('status', 'completed');
 
         })->with(['order', 'order.delivery' => function ($q){
             $q->select( "id","full_name", "phone", "delivery_rate","lng", "lat",);
-        }])->latest()->first();
-        if($lastOrder){
+        }])->latest()->paginate();
+        
+        if($lastOrders){
             return $this->handleResponse(
                 true,
                 "",
                 [],
                 [
-                    "last_order" => $lastOrder->order
+                    "last_orders" => $lastOrders
                 ],
                 [
                     "اخر طلب مكتمل عشان تاخد منه رقم الاوردر للتقييم"

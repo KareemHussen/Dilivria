@@ -103,8 +103,8 @@ class AuthController extends Controller
             [],
             [],
             [
-                "code get expired after 10 minutes",
-                "Please verify your OTP to complete login"
+                __("registration.code expires in 10 minutes"),
+                __("registration.verify otp to login")
             ]
         );
 

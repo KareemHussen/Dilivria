@@ -66,8 +66,8 @@ class WalletRechargeResource extends Resource
                                     $fail(__('wallet.invalid_vodafone_number'));
                                 }
                             } elseif ($paymentType === 'instapay') {
-                                if (!preg_match('/^@[a-zA-Z0-9_]{3,}$/', $value)) {
-                                    $fail(__('wallet.invalid_instapay_address'));
+                                if (!preg_match('/^(@[a-zA-Z0-9_]{3,}|01[0125][0-9]{8})$/', $value)) {
+                                    $fail('Payment number must be a valid Instapay handle (e.g. @test123) or a valid Egyptian phone number');
                                 }
                             }
                         };

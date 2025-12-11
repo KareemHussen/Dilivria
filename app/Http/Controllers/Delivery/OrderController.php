@@ -70,6 +70,19 @@ class OrderController extends Controller
 
         $placeOrder = PlaceOrder::findOrFail($request->place_order_id);
         $delivery = $request->user();
+        
+        // Check if delivery has sufficient wallet balance (must be >= -10)
+        $wallet = $delivery->wallet;
+        if (!$wallet || $wallet->balance < -10) {
+            return $this->handleResponse(
+                false,
+                __("wallet.wallet recharge required"),
+                [],
+                [],
+                []
+            );
+        }
+        
         $lastOrder = $delivery->orders()->
         whereNotIn('status', ['completed', 'cancelled_user', 'cancelled_delivery'])
         ->latest()->first();

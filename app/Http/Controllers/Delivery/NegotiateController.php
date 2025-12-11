@@ -31,6 +31,18 @@ class NegotiateController extends Controller
         $placeOrder = PlaceOrder::findOrFail($request->place_order_id);
 
         $proposer = $request->user();
+        
+        // Check if delivery has sufficient wallet balance (must be >= -10)
+        $wallet = $proposer->wallet;
+        if (!$wallet || $wallet->balance < -10) {
+            return $this->handleResponse(
+                false,
+                __("wallet.wallet recharge required"),
+                [],
+                [],
+                []
+            );
+        }
         // Create a new negotiation proposal
         $negotiation = OrderNegotiation::create([
             'place_order_id' => $placeOrder->id,
@@ -88,6 +100,18 @@ class NegotiateController extends Controller
         $negotiation->save();
 
         if ($negotiation->status == 'accepted') {
+            // Check if delivery has sufficient wallet balance (must be >= -10)
+            $deliveryWallet = $delivery->wallet;
+            if (!$deliveryWallet || $deliveryWallet->balance < -10) {
+                return $this->handleResponse(
+                    false,
+                    __("wallet.wallet recharge required"),
+                    [],
+                    [],
+                    []
+                );
+            }
+            
             if($placeOrder->payment_method == "wallet"){
                 $wallet = Wallet::where("customer_id", $placeOrder->customer_id)->first();
                 $wallet->balance -=  $negotiation->proposed_price;

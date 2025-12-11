@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\LogBroadcastAuth;
 use App\Http\Middleware\SetLocale;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -14,8 +15,11 @@ return Application::configure(basePath: dirname(__DIR__))
             __DIR__.'/../routes/globalAPI.php',
         ],
         commands: __DIR__.'/../routes/console.php',
-        channels: __DIR__.'/../routes/channels.php',
         health: '/up',
+    )
+    ->withBroadcasting(
+        __DIR__.'/../routes/channels.php',
+        ['middleware' => [LogBroadcastAuth::class, 'auth:sanctum']]
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->redirectGuestsTo('/unauthorized');

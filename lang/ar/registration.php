@@ -5,6 +5,7 @@ return [
     "Your Authentication Code is" => "رمز التحقق الخاص بك هو",
     "signed up successfully" => "تم التسجيل بنجاح",
     "auth code sent" => "تم إرسال رمز التحقق",
+    "auth code sent to your phone" => "تم إرسال رمز التحقق إلى هاتفك: ",
     "sorry couldn't send your code" => "عذرًا، لم نتمكن من إرسال الرمز، يرجى المحاولة مرة أخرى",
     "incorrect code" => "رمز غير صحيح",
     "this code is expired" => "انتهت صلاحية هذا الرمز",
@@ -14,6 +15,9 @@ return [
     "password changed successfully" => "تم تغيير كلمة المرور بنجاح",
     "you are not registered" => "أنت غير مسجل، رقم الهاتف غير مستخدم",
     "Invalid Credentials" => "بيانات اعتماد غير صحيحة",
-    "You are Loged In" => "لقد قمت بتسجيل الدخول",
-    "logged out" => "تم تسجيل الخروج"
+    "You are Logged In" => "لقد قمت بتسجيل الدخول",
+    "logged out" => "تم تسجيل الخروج",
+    "fcm updated successfully" => "تم تحديث رمز FCM بنجاح",
+    "code expires in 10 minutes" => "تنتهي صلاحية الرمز بعد 10 دقائق",
+    "verify otp to login" => "يرجى التحقق من رمز OTP لإتمام تسجيل الدخول",
 ];

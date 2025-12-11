@@ -9,6 +9,7 @@ use App\Http\Controllers\Global\WalletController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 //Auth
 Route::get('/ask-email-verification-code', [AuthController::class, "askEmailCode"])->middleware('auth:sanctum,customer');
 Route::post('/verify-email', [AuthController::class, "verifyEmail"])->middleware('auth:sanctum,customer');

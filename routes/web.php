@@ -21,4 +21,4 @@ Route::get('/unauthorized', function () {
     });
 
 
-Broadcast::routes(['middleware' => 'auth:sanctum']);
+// Broadcast::routes moved to globalAPI.php to avoid CSRF issues with API clients

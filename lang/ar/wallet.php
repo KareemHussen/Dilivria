@@ -14,4 +14,5 @@ return [
     "invalid_instapay_address" => "يجب أن يكون عنوان انستاباي صحيح يبدأ بـ @ (مثل @test123)",
     "vodafone_number_help" => "رقم هاتف مصري يبدأ بـ 010 أو 011 أو 012 أو 015",
     "instapay_address_help" => "عنوان انستاباي يبدأ بـ @ ويتكون من 3 أحرف على الأقل",
+    "wallet recharge required" => "رجاء شحن المحفظة لقبول طلبات جديدة",
 ];

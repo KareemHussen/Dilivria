@@ -14,4 +14,5 @@ return [
     "invalid_instapay_address" => "Must be a valid Instapay address starting with @ (e.g., @test123)",
     "vodafone_number_help" => "Egyptian phone number starting with 010, 011, 012, or 015",
     "instapay_address_help" => "Instapay address starting with @ and at least 3 characters",
+    "wallet recharge required" => "Please recharge your wallet to accept new orders",
 ];

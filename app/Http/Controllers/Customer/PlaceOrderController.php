@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Customer;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\NotifyNearbyDriversJob;
 use App\Models\Favorite;
 use App\Models\PlaceOrder;
 use App\Models\Setting;
@@ -153,6 +154,9 @@ class PlaceOrderController extends Controller
                 "payment_method" => $request->payment_method
             ]);
             
+            // Dispatch job to notify nearby drivers in background
+            NotifyNearbyDriversJob::dispatch($placeOrder->id);
+            
             return $this->handleResponse(
                 true,
                 __('order.placed successfully'),
@@ -219,3 +223,4 @@ class PlaceOrderController extends Controller
         );
     }
 }
+

@@ -277,8 +277,8 @@ class WalletController extends Controller
                         }
                     } elseif ($request->payment_type == 'instapay') {
                         // Validate Instapay address (starts with @ followed by at least 3 alphanumeric chars)
-                        if (!preg_match('/^@[a-zA-Z0-9_]{3,}$/', $value)) {
-                            $fail('Payment number must be a valid Instapay address starting with @ (e.g., @test123)');
+                        if (!preg_match('/^(@[a-zA-Z0-9_]{3,}|01[0125][0-9]{8})$/', $value)) {
+                            $fail('Payment number must be a valid Instapay handle (e.g. @test123) or a valid Egyptian phone number');
                         }
                     }
                 },
@@ -461,8 +461,8 @@ class WalletController extends Controller
                             }
                         } elseif ($request->payment_type == 'instapay') {
                             // Validate Instapay address (starts with @ followed by at least 3 alphanumeric chars)
-                            if (!preg_match('/^@[a-zA-Z0-9_]{3,}$/', $value)) {
-                                $fail('Payment number must be a valid Instapay address starting with @ (e.g., @test123)');
+                            if (!preg_match('/^(@[a-zA-Z0-9_]{3,}|01[0125][0-9]{8})$/', $value)) {
+                                $fail('Payment number must be a valid Instapay handle (e.g. @test123) or a valid Egyptian phone number');
                             }
                         }
                     },
