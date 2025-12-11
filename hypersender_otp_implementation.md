@@ -35,7 +35,7 @@ trait SendSMSTrait
             $to = $this->formatPhoneNumber($to);
             
             // Create message content with OTP
-            $message = "Your verification code is {$otp}. This code expires in 10 minutes.";
+            $message = "Your verification code is {$otp}. This code expires in 3 minutes.";
             
             // Send SMS using Hypersender
             $response = Sms::to($to)
@@ -143,7 +143,7 @@ Update the login method in `AuthController.php` to use the new OTP methods:
 $code = rand(1000, 9999);
 
 $user->last_otp = Hash::make($code); // Store hashed OTP
-$user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+$user->last_otp_expire = Carbon::now()->addMinutes(3)->timezone('Africa/Cairo');
 
 if($request->fcm_token) {
     $user->fcm_token = $request->fcm_token;
@@ -172,7 +172,7 @@ if ($user) {
 
     // Store hashed OTP
     $user->last_otp = Hash::make($code);
-    $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+    $user->last_otp_expire = Carbon::now()->addMinutes(3)->timezone('Africa/Cairo');
     $user->verified = false; // Set user as unverified until OTP is confirmed
     $user->save();
     

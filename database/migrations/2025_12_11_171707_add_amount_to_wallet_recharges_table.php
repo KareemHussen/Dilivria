@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('settings', function (Blueprint $table) {
-            $table->string('phone')->after('cost_per_km');
-            $table->string('address')->after('phone');
+        Schema::table('wallet_recharges', function (Blueprint $table) {
+            $table->decimal('amount', 10, 2)->after('id')->nullable();
         });
     }
 
@@ -22,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('settings', function (Blueprint $table) {
-            $table->dropColumn(['phone', 'address']);
+        Schema::table('wallet_recharges', function (Blueprint $table) {
+            $table->dropColumn('amount');
         });
     }
 };

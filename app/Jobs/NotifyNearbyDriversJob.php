@@ -17,14 +17,14 @@ class NotifyNearbyDriversJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels, FcmNotificationTrait;
 
-    protected $placeOrderId;
+    protected $placeOrder;
 
     /**
      * Create a new job instance.
      */
-    public function __construct(int $placeOrderId)
+    public function __construct(PlaceOrder $placeOrder)
     {
-        $this->placeOrderId = $placeOrderId;
+        $this->placeOrder = $placeOrder;
     }
 
     /**
@@ -33,9 +33,8 @@ class NotifyNearbyDriversJob implements ShouldQueue
     public function handle(): void
     {
         try {
-            $placeOrder = PlaceOrder::find($this->placeOrderId);
             
-            if (!$placeOrder || $placeOrder->status !== 'pending') {
+            if (!$this->placeOrder) {
                 return;
             }
 
@@ -47,10 +46,9 @@ class NotifyNearbyDriversJob implements ShouldQueue
             $distanceLimit = $setting->delivery_coverage;
             $earthRadius = 6371;
 
+
+            
             $nearbyDrivers = Customer::where('delivery', true)
-                ->where('verified', true)
-                ->where('delivery_status', 'online')
-                ->where('id', '!=', $placeOrder->customer_id)
                 ->whereNotNull('fcm_token')
                 ->whereNotNull('lat')
                 ->whereNotNull('lng')
@@ -58,7 +56,7 @@ class NotifyNearbyDriversJob implements ShouldQueue
                     COS(RADIANS(?)) * COS(RADIANS(lat)) *
                     COS(RADIANS(lng) - RADIANS(?)) +
                     SIN(RADIANS(?)) * SIN(RADIANS(lat))
-                )) AS distance", [$placeOrder->lat_from, $placeOrder->lng_from, $placeOrder->lat_from])
+                )) AS distance", [$this->placeOrder->lat_from, $this->placeOrder->lng_from, $this->placeOrder->lat_from])
                 ->having('distance', '<=', $distanceLimit)
                 ->get();
 
@@ -71,7 +69,7 @@ class NotifyNearbyDriversJob implements ShouldQueue
                 );
             }
 
-            Log::info('Notified ' . $nearbyDrivers->count() . ' nearby drivers for order #' . $this->placeOrderId);
+            Log::info('Notified ' . $nearbyDrivers->count() . ' nearby drivers for order #' . $this->placeOrder->id);
             
         } catch (\Exception $e) {
             Log::error('Error notifying nearby drivers: ' . $e->getMessage());

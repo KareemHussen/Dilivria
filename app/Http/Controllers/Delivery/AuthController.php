@@ -76,7 +76,7 @@ class AuthController extends Controller
             $code = rand(1000, 9999);
 
             $user->last_otp = $code;
-            $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+            $user->last_otp_expire = Carbon::now()->addMinutes(3)->timezone('Africa/Cairo');
             $user->save();
             $message = __("registration.Your Authentication Code is");
 
@@ -103,7 +103,7 @@ class AuthController extends Controller
             [],
             [],
             [
-                __("registration.code expires in 10 minutes"),
+                __("registration.code expires in 3 minutes"),
                 __("registration.verify otp to login")
             ]
         );

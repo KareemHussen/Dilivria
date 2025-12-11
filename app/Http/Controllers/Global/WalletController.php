@@ -73,7 +73,7 @@ class WalletController extends Controller
                 $code = rand(1000, 9999);
 
                 $user->last_otp = Hash::make($code);
-                $user->last_otp_expire = Carbon::now()->addMinutes(10)->timezone('Africa/Cairo');
+                $user->last_otp_expire = Carbon::now()->addMinutes(3)->timezone('Africa/Cairo');
                 $user->save();
     
     
@@ -264,6 +264,7 @@ class WalletController extends Controller
     public function deposit(Request $request){
         try{
         $validator = Validator::make($request->all(), [
+            "amount" => 'required|numeric|min:1',
             "photo" => 'required|image|mimes:jpeg,png,jpg,gif',
             "payment_type" => 'required|in:vodafone_cash,instapay',
             "payment_number" => [
@@ -296,6 +297,7 @@ class WalletController extends Controller
         $imagePath = $request->file('photo')->store('recharges', 'public');
         $recharge = WalletRecharge::create([
             "wallet_id" => $wallet->id,
+            "amount" => $request->amount,
             "photo" => $imagePath,
             "payment_type" => $request->payment_type,
             "payment_number" => $request->payment_number

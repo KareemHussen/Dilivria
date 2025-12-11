@@ -43,6 +43,25 @@ class PopularPlaceResource extends Resource
                                     ->label(__("Name"))
                                     ->required()
                                     ->maxLength(255),
+                                Forms\Components\Select::make('type')
+                                    ->label(__('Type'))
+                                    ->searchable()
+                                    ->options([
+                                        'restaurant' => __('Restaurant'),
+                                        'pharmacy' => __('Pharmacy'),
+                                        'market' => __('Market'),
+                                        'gas_station' => __('Gas Station'),
+                                        'metro_station' => __('Metro Station'),
+                                        'hospital' => __('Hospital'),
+                                        'bank' => __('Bank'),
+                                        'school' => __('School'),
+                                        'mall' => __('Mall'),
+                                        'cafe' => __('Cafe'),
+                                        'hotel' => __('Hotel'),
+                                        'park' => __('Park'),
+                                        'cinema' => __('Cinema'),
+                                        'other' => __('Other'),
+                                    ]),
                                 Forms\Components\Textarea::make('description')
                                     ->label(__("Description"))
                                     ->columnSpanFull(),
@@ -92,6 +111,33 @@ class PopularPlaceResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->label(__('Name'))
                     ->searchable(),
+                Tables\Columns\TextColumn::make('type')
+                    ->label(__('Type'))
+                    ->badge()
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        'restaurant' => __('Restaurant'),
+                        'pharmacy' => __('Pharmacy'),
+                        'market' => __('Market'),
+                        'gas_station' => __('Gas Station'),
+                        'metro_station' => __('Metro Station'),
+                        'hospital' => __('Hospital'),
+                        'bank' => __('Bank'),
+                        'school' => __('School'),
+                        'mall' => __('Mall'),
+                        'cafe' => __('Cafe'),
+                        'hotel' => __('Hotel'),
+                        'park' => __('Park'),
+                        'cinema' => __('Cinema'),
+                        'other' => __('Other'),
+                        default => $state,
+                    })
+                    ->color(fn (string $state): string => match ($state) {
+                        'hospital', 'pharmacy' => 'danger',
+                        'bank', 'school' => 'info',
+                        'park', 'market' => 'success',
+                        'gas_station', 'metro_station' => 'warning',
+                        default => 'gray',
+                    }),
                 Tables\Columns\TextColumn::make('address')
                     ->label(__('Address'))
                     ->searchable(),

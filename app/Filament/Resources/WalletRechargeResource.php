@@ -37,6 +37,12 @@ class WalletRechargeResource extends Resource
                 ->label(__('Receipt'))
                 ->disabled(fn ($context) => $context === 'edit')
                 ->required(fn ($context) => $context === 'create'),
+
+                TextInput::make('amount')
+                    ->label(__('Amount'))
+                    ->required()
+                    ->numeric()
+                    ->disabled(fn ($context) => $context === 'edit'),
                 
                 Forms\Components\Select::make('payment_type')
                 ->label(__('Payment Method'))
@@ -87,6 +93,9 @@ class WalletRechargeResource extends Resource
                 Tables\Columns\ImageColumn::make('photo')
                 ->label(__('Receipt'))
                 ->url(fn($record) => $record->photo_url), // Make image clickable using the accessor
+                Tables\Columns\TextColumn::make('amount')
+                    ->label(__('Amount'))
+                    ->money('EGP'),
                 Tables\Columns\TextColumn::make('wallet.customer.username')
                     ->label(__('Username')),
                 Tables\Columns\TextColumn::make('payment_type')
@@ -138,6 +147,7 @@ class WalletRechargeResource extends Resource
                             ->prefix(__("EGP"))
                             ->required()
                             ->numeric()
+                            ->default(fn($record) => $record->amount)
                             ->label(__('Amount')),
                     ])
                     ->action(function ($record, array $data) {

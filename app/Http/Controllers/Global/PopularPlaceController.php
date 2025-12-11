@@ -25,7 +25,11 @@ class PopularPlaceController extends Controller
                 "choose a favorite address or set the lng & lat to get the distance in KM"
             ]);
         }
-        $popularPlaces = PopularPlace::all();
+        $popularPlaces = PopularPlace::query();
+        if($request->type){
+            $popularPlaces->where('type', $request->type);
+        }
+        $popularPlaces = $popularPlaces->get();
 
         $favorite = $request->favorite_id ? Favorite::findOrFail($request->favorite_id) : null;
         $lat = $favorite ? $favorite->lat : ($request->lat ?: null);
@@ -62,7 +66,11 @@ class PopularPlaceController extends Controller
             ]);
         }
         $perPage = $request->per_page ?: 10;
-        $popularPlaces = PopularPlace::paginate($perPage);
+        $popularPlaces = PopularPlace::query();
+        if($request->type){
+            $popularPlaces->where('type', $request->type);
+        }
+        $popularPlaces = $popularPlaces->paginate($perPage);
 
         $favorite = $request->favorite_id ? Favorite::findOrFail($request->favorite_id) : null;
         $lat = $favorite ? $favorite->lat : ($request->lat ?: null);
@@ -113,6 +121,47 @@ class PopularPlaceController extends Controller
             [],
             [
                 "popular_place" => $place
+            ],
+            []
+        );
+    }
+    public function getNearby(Request $request){
+        $validator = Validator::make($request->all(), [
+            "favorite_id" => "nullable|exists:favorites,id",
+            "lat" => "required_without:favorite_id|numeric",
+            "lng" => "required_without:favorite_id|numeric",
+            "distance" => "nullable|numeric"
+        ]);
+
+        if ($validator->fails()){
+            return $this->handleResponse(false,"", [$validator->errors()->first()],[],
+            [
+                "choose a favorite address or set the lng & lat to get the nearby places"
+            ]);
+        }
+
+        $favorite = $request->favorite_id ? Favorite::find($request->favorite_id) : null;
+        $lat = $favorite ? $favorite->lat : $request->lat;
+        $lng = $favorite ? $favorite->lng : $request->lng;
+        
+        $distanceLimit = $request->distance ?: 20; // Default 20km
+        
+        $popularPlaces = PopularPlace::selectRaw("*, (
+            6371 * acos(
+                cos(radians(?)) * cos(radians(lat)) * cos(radians(lng) - radians(?)) +
+                sin(radians(?)) * sin(radians(lat))
+            )
+        ) AS distance", [$lat, $lng, $lat])
+        ->having('distance', '<=', $distanceLimit)
+        ->orderBy('distance')
+        ->paginate($request->per_page ?: 20);
+
+        return $this->handleResponse(
+            true,
+            "",
+            [],
+            [
+                "popular_places" => $popularPlaces
             ],
             []
         );

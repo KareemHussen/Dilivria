@@ -5,6 +5,7 @@ use App\Http\Controllers\Global\MiscController;
 use App\Http\Controllers\Global\NegotiateController;
 use App\Http\Controllers\Global\NotificationController;
 use App\Http\Controllers\Global\PopularPlaceController;
+use App\Http\Controllers\Global\PopularPlaceSuggestionController;
 use App\Http\Controllers\Global\WalletController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -53,6 +54,16 @@ Route::get('/payment-info', [MiscController::class, 'paymentInfo']);
 Route::get('/popular-places/all', [PopularPlaceController::class, 'getAll']);
 Route::get('/popular-places/paginate', [PopularPlaceController::class, 'getPaginate']);
 Route::get('/popular-places/get', [PopularPlaceController::class, 'get']);
+Route::get('/popular-places/nearby', [PopularPlaceController::class, 'getNearby']);
+
+//Popular Place Suggestions
+Route::middleware('auth:sanctum,customer')->group(function () {
+    Route::prefix('popular-place-suggestions')->group(function () {
+        Route::post('/create', [PopularPlaceSuggestionController::class, 'create']);
+        Route::get('/my-suggestions', [PopularPlaceSuggestionController::class, 'getMySuggestions']);
+        Route::get('/get', [PopularPlaceSuggestionController::class, 'get']);
+    });
+});
 
 //Notifications
 Route::middleware('auth:sanctum,customer')->group(function (){

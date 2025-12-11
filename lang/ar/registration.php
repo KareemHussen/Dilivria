@@ -18,6 +18,6 @@ return [
     "You are Logged In" => "لقد قمت بتسجيل الدخول",
     "logged out" => "تم تسجيل الخروج",
     "fcm updated successfully" => "تم تحديث رمز FCM بنجاح",
-    "code expires in 10 minutes" => "تنتهي صلاحية الرمز بعد 10 دقائق",
+    "code expires in 3 minutes" => "تنتهي صلاحية الرمز بعد 3 دقائق",
     "verify otp to login" => "يرجى التحقق من رمز OTP لإتمام تسجيل الدخول",
 ];

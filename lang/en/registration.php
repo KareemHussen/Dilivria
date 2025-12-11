@@ -18,6 +18,6 @@ return [
     "You are Logged In" => "You are Logged In",
     "logged out" => "Logged Out",
     "fcm updated successfully" => "FCM token updated successfully",
-    "code expires in 10 minutes" => "Code expires in 10 minutes",
+    "code expires in 3 minutes" => "Code expires in 3 minutes",
     "verify otp to login" => "Please verify your OTP to complete login",
 ];

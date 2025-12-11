@@ -8,6 +8,7 @@ class WalletRecharge extends Model
 {
     protected $fillable = [
         "wallet_id",
+        "amount",
         "photo",
         "payment_type", // 'vodafone_cash' or 'instapay'
         "payment_number", // phone number for Vodafone Cash or address for Instapay

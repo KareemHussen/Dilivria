@@ -12,7 +12,8 @@ class PopularPlace extends Model
         "images",
         "address",
         "lng",
-        "lat"
+        "lat",
+        "type"
     ];
 
     protected $casts = [

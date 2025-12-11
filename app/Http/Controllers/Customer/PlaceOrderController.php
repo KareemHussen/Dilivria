@@ -155,7 +155,7 @@ class PlaceOrderController extends Controller
             ]);
             
             // Dispatch job to notify nearby drivers in background
-            NotifyNearbyDriversJob::dispatch($placeOrder->id);
+            NotifyNearbyDriversJob::dispatch($placeOrder);
             
             return $this->handleResponse(
                 true,
